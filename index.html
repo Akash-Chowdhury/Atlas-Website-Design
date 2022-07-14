@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body id="ff">
+    <div class="humberger_menu" id="mynav" >
+        <div class="X-icon">
+            <svg onclick="closenav()" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Random</a></li>
+            <li><a href="#">Fashion</a></li>
+        </ul>
+    </div>
+    <div class="to-do" id="todo">
+        <svg onclick="closelist()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        <h3>List Is empty</h3>
+    </div>
+    <div class="container" >
+        <div class="nav">
+            <!-- write your code here -->
+            <div class="left" >
+                <div class="menu" onclick="opennav()">
+                    <div class="a">
+                        <div class="m" id="mm1"></div>
+                        <div class="m" id="mm2"></div>
+                    </div>
+                    <div class="b">
+                        <div class="m" id="mm3"></div>
+                        <div class="m" id="mm4"></div>
+                    </div>
+                </div>
+                <div class="atlas"><img src="icon.png" alt="Atlas"></div>
+                <div class="list">
+                        <div id="">Reviews</div>
+                        <div>News
+                            <svg onclick="openlist()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </div>
+                        <div>Random
+                            <svg onclick="openlist()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </div>
+                        <div>Fashion
+                            <svg onclick="openlist()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                
+            </div>
+        </div>
+        <div class="toplist" onclick="closenav()" id="list">
+            <div class="item" id="box0">
+             <div class="logo">
+                 <img src="American sweet  pan cake with honey.jpg" alt="cake" id="cake">
+             </div>
+             <div class="rght" id="caketext">
+                 <h6><b>American sweet pancakes with honey.</b></h6>
+                 <p>about a year ago</p>
+             </div>
+            </div>
+            <div class="item" id="box5" onclick="big5()">
+                <div class="logo">
+                    <img src="yellow.jpg" alt="cake" id="yellow">
+                </div>
+                <div class="rght" id="yellowtext">
+                    <h6><b>How lovely yellow is! It stands for the sun.</b></h6>
+                    <p>about a year ago</p>
+                </div>
+               </div>  
+            <div class="item" id="box1" onclick="big1()">
+             <div class="logo">
+                 <img src="fast food.jpg" alt="cake" id="food">
+             </div>
+             <div class="rght" id="foodtext">
+                 <h6><b>Fast food is a popular, because it's convenient.</b></h6>
+                 <p>about a year ago</p>
+             </div>
+            </div>
+            <div class="item" id="box2" onclick="big2()">
+             <div class="logo">
+                 <img src="orange.jpg" alt="cake" id="orange">
+             </div>
+             <div class="rght" id="orangetext">
+                 <h6><b>Fashion and style tips every woman should know.</b></h6>
+                 <p>11 months ago</p>
+             </div>
+            </div>
+            <div class="item" id="box3" onclick="big3()">
+             <div class="logo">
+                 <img src="watch.jpg" alt="cake" id="watch">
+             </div>
+             <div class="rght" id="watchtext">
+                 <h6><b>Fashion and style tips every woman should know.</b></h6>
+                 <p>11 months ago</p>
+             </div>
+            </div>
+            <div class="item" id="box4" onclick="big4()">
+             <div class="logo">
+                 <img src="car.jpg" alt="cake" id="car">
+             </div>
+             <div class="rght" id="cartext">
+                 <h6><b>Fashion and style tips every woman should know.</b></h6>
+                 <p>11 months ago</p>
+             </div>
+            </div>
+         </div>
+        <div class="bdy" onclick="closenav()">
+            <div class="full">
+                <div class="fchild" id="fl">
+                    <div class="top">
+                        <img src="orange.jpg" alt="">
+                        <div class="text1">
+                            <h6>Fashion</h6>
+                        </div>
+                        <div class="text2">
+                            <h5>Fashion and style tips every woman should know.</h5>
+                            <p>11 months ago</p>
+                        </div>
+                    </div>
+                    <div class="bottom" id="img02">
+                        <img src="fast food.jpg" alt="">
+                        <div class="text1">
+                            <h6>Food</h6>
+                        </div>
+                        <div class="text2">
+                            <h5>Fast food is popular because it's convenient.</h5>
+                            <p>about a year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <img src="yellow.jpg" alt="">
+                    <div class="text1" id="mid">
+                        <h6>Fashion</h6>
+                    </div>
+                    <div class="text2" id="midtxt">
+                        <h5>How lovely yellow is! It stands for the sun.</h5>
+                        <p>nw studio. about a year ago</p>
+                    </div>
+                </div>
+                <div class="fchild" id="fr">
+                    <div class="top">
+                        <img src="watch.jpg" alt="" >
+                        <div class="text1" id="tech">
+                            <h6>  Tech  </h6>
+                        </div>
+                        <div class="text2">
+                            <h5>For good results must be make good plan.</h5>
+                            <p>about a year ago</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="car.jpg" alt="" >
+                        <div class="text1" id="sports">
+                            <h6>Sports</h6>
+                        </div>
+                        <div class="text2">
+                            <h5>If you think lifting is dangerous, try being weak.</h5>
+                            <p>about a year ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme-switch-wrapper" >
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox">
+            <svg onclick="switchtheme()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+              </svg>
+        </label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
